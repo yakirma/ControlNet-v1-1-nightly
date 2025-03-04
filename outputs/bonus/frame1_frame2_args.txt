@@ -1,0 +1,19 @@
+{
+    "input_frame1": "test_imgs/frame1.png",
+    "input_frame2": "test_imgs/frame2.png",
+    "output_dir": "./outputs/bonus",
+    "do_diffusion_sync": false,
+    "prompt": "mermaid underwater, blue clothes, corals and fishes background",
+    "num_samples": 1,
+    "seed": 1,
+    "det": "Lineart",
+    "image_resolution": 512,
+    "strength": 1.0,
+    "guess_mode": false,
+    "detect_resolution": 512,
+    "ddim_steps": 20,
+    "scale": 9.0,
+    "eta": 1.0,
+    "a_prompt": "best quality",
+    "n_prompt": "lowres, bad anatomy, bad hands, cropped, worst quality"
+}

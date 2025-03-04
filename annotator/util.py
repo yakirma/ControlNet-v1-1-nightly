@@ -27,8 +27,8 @@ def HWC3(x):
         return y
 
 
-def resize_image(input_image, resolution):
-    H, W, C = input_image.shape
+def resize_image(input_image, resolution, is_depth=False):
+    H, W, *_ = input_image.shape
     H = float(H)
     W = float(W)
     k = float(resolution) / min(H, W)
@@ -36,7 +36,11 @@ def resize_image(input_image, resolution):
     W *= k
     H = int(np.round(H / 64.0)) * 64
     W = int(np.round(W / 64.0)) * 64
-    img = cv2.resize(input_image, (W, H), interpolation=cv2.INTER_LANCZOS4 if k > 1 else cv2.INTER_AREA)
+    if is_depth:
+        interp_type = cv2.INTER_NEAREST
+    else:
+        interp_type = cv2.INTER_LANCZOS4 if k > 1 else cv2.INTER_AREA
+    img = cv2.resize(input_image, (W, H), interpolation=interp_type)
     return img
 
 

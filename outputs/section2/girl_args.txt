@@ -1,0 +1,20 @@
+{
+    "input_image": "test_imgs/girl.png",
+    "input_depth": "test_imgs/girl.npz",
+    "output_dir": "./outputs/section2",
+    "do_diffusion_sync": true,
+    "prompt_fg": "mermaid underwater, blue clothes, corals and fishes background",
+    "prompt_bg": "underwater, corals and fishes background",
+    "num_samples": 1,
+    "seed": 1,
+    "det": "Lineart",
+    "image_resolution": 512,
+    "strength": 1.0,
+    "guess_mode": false,
+    "detect_resolution": 512,
+    "ddim_steps": 20,
+    "scale": 9.0,
+    "eta": 1.0,
+    "a_prompt": "best quality",
+    "n_prompt": "lowres, bad anatomy, bad hands, cropped, worst quality"
+}

@@ -1,0 +1,2 @@
+prompt_fg: mermaid underwater, blue clothes, corals and fishes background
+prompt_bg: mermaid underwater, blue clothes, corals and fishes background
