@@ -184,7 +184,7 @@ if __name__ == "__main__":
     with open(Path(output_dir) / (frame1_basename + '_' + frame2_basename + '_args.txt'), 'w') as f:
         f.write(json.dumps(vars(args), indent=4))
 
-            # load input image + depth
+    # load input image + depth
     input_frame1 = imageio.imread(args.input_frame1)
     input_frame2 = imageio.imread(args.input_frame2)
 
